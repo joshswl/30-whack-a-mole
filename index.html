@@ -70,6 +70,12 @@
       peep();
       setTimeout(() => timeUp = true, 10000);
   }
+
+  function bonk(e) {
+      console.log(e);
+  }
+
+  moles.forEach(mole => mole.addEventListener('click', bonk));
 </script>
 </body>
 </html>
